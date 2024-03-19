@@ -317,7 +317,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "light-blue":#DFF5FF,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -380,7 +381,7 @@ $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -415,6 +416,38 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+  11: $spacer * 9,
+  12: $spacer * 10,
+  13: $spacer * 11,
+  14: $spacer * 12,
+  15: $spacer * 13,
+  16: $spacer * 14,
+  17: $spacer * 15,
+  18: $spacer * 16,
+  19: $spacer * 17,
+  20: $spacer * 18,
+  21: $spacer * 19,
+  22: $spacer * 20,
+  23: $spacer * 21,
+  24: $spacer * 22,
+  25: $spacer * 23,
+  26: $spacer * 24,
+  27: $spacer * 25,
+  28: $spacer * 26,
+  29: $spacer * 27,
+  30: $spacer * 28,
+  31: $spacer * 29,
+  32: $spacer * 30,
+  33: $spacer * 31,
+  34: $spacer * 32,
+  35: $spacer * 33,
+  36: $spacer * 34,
+  37: $spacer * 35,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -425,7 +458,9 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  25:25%,
   50: 50%,
+  75:75%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
