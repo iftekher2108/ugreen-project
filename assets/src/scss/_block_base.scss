@@ -69,8 +69,31 @@
 }
 
 
+// life fit block
 .life-fit-block {
     .card {
         min-height: 26rem;
     }
 }
+
+
+// about all
+
+.about-all {
+    .card-header {
+        img {
+            height:250px;
+        }
+    }
+}
+
+
+// client section
+
+.client {
+    .content {
+        min-height:5rem;
+    }
+}
+
+

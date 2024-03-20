@@ -1,6 +1,6 @@
 console.log('iftekher mahmud pervez')
 
-
+// banner offer slide
 $('.offer-slider').slick({
   dots: false,
   infinite: true,
@@ -12,6 +12,7 @@ $('.offer-slider').slick({
 })
 
 
+// hero image slide
 $('.hero-slider').slick({
     dots: true,
     infinite: true,
@@ -19,4 +20,15 @@ $('.hero-slider').slick({
     speed: 500,
     autoplay: true,
     autoplaySpeed: 2000,
+  })
+
+
+  // client title show js 
+  $('.client img').on('mouseenter',function(){
+
+    $(this).parent('.col').siblings('.col').children('img').removeClass('border-bottom')
+    $(this).addClass('border-bottom')
+    $(".client .content h4").text($(this).attr('title'));
+    // console.log($(this).attr('title'))
+
   })
