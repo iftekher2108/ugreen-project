@@ -26,7 +26,7 @@ $('.hero-slider').slick({
   // client title show js 
   $('.client img').on('mouseenter',function(){
 
-    $(this).parent('.col').siblings('.col').children('img').removeClass('border-bottom')
+    $(this).parent('.icon').siblings('.icon').children('img').removeClass('border-bottom')
     $(this).addClass('border-bottom')
     $(".client .content h4").text($(this).attr('title'));
     // console.log($(this).attr('title'))
