@@ -1,14 +1,48 @@
+// ========================= header section =====================================
+
+header {
+    .navbar {
+        ul.dropdown-menu {
+            left: -50%;
+            top:130%;
+            width: 14rem;
+            border-radius: 0px;
+            -webkit-border-radius: 0px;
+            -moz-border-radius: 0px;
+            -ms-border-radius: 0px;
+            -o-border-radius: 0px;
+                
+            
+            li a { 
+                color:rgba(58, 58, 58, 0.747);
+                padding:0.8rem 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// ============================ header section ===================================
+
+
 /* ======================= hero section ====================================== */
 .hero-content {
     position: absolute;
     text-align: center;
-    top: 10%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 

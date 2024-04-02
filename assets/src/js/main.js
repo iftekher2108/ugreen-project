@@ -34,6 +34,25 @@ $('.hero-slider').slick({
   })
 
 
+
+  // header scrolling function
+
+  $(document).scroll(function(){
+    if($(document).scrollTop() < 10) {
+      $('header').css({'background':'transparent'})
+      $('.navbar').find('a.nav-link').css({'color':'white'})
+    }
+    else {
+      $('header').css({'background':'white'})
+      $('.navbar').find('a.nav-link').css({'color':'black'})
+    }
+  })
+
+
+
+
+
+
   // client title show js 
   $('.client img').on('mouseenter',function(){
 
@@ -45,9 +64,10 @@ $('.hero-slider').slick({
   })
 
 
-
   // loader scripts
   $(document).ready(function(){
     $('#loader').fadeOut(300);
   })
+
+
 
