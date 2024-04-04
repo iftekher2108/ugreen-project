@@ -15,19 +15,27 @@ html {
 
 header {
     .navbar {
-       li a {
+       li {
+        border-bottom:2px solid transparent;
+        &:hover  {
+            border-bottom:2px solid white;
+        }
+        &:focus {
+            color:white;
+        }
+        a {
             color: white;
             &:focus {
                 color:white;
             }
         }
+       }
     }
 
     &:hover {
-        background: white;
         .navbar {
-            a {
-                color: black;
+           li a {
+                color: white;
             }   
         }
     }
