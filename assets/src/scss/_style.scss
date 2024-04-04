@@ -12,31 +12,69 @@ html {
     overflow-x: hidden;
 }
 
+.btn-new-hot {
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    padding: 0.2rem 0.5rem;
+    border-radius: 10rem;
+    top: -17%;
+    right: -7%;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+}
 
 header {
     .navbar {
-       li {
-        border-bottom:2px solid transparent;
-        &:hover  {
-            border-bottom:2px solid white;
-        }
-        &:focus {
-            color:white;
-        }
-        a {
-            color: white;
-            &:focus {
-                color:white;
+
+        .new-release-btn {
+            position: relative;
+
+            &::before {
+                content: 'New';
+                @extend .btn-new-hot;
+                background:var(--bs-success);
             }
         }
-       }
+
+        .charger-btn {
+            position: relative;
+
+            &::before {
+                content: 'Hot';
+                @extend .btn-new-hot;
+                background:var(--bs-danger);
+            }
+        }
+
+         li {
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                border-bottom: 2px solid white;
+            }
+
+            &:focus {
+                color: white;
+            }
+
+            a {
+                color: white;
+
+                &:focus {
+                    color: white;
+                }
+            }
+        }
     }
 
     &:hover {
         .navbar {
-           li a {
+            li a {
                 color: white;
-            }   
+            }
         }
     }
 }
